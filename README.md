@@ -17,7 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/ycio/docker-installer/main/ubuntu.s
 ```
 adduser ci
 # ...
-usermod usermod -aG sudo ci
+usermod -aG sudo ci
 usermod -aG docker ci
 newgrp docker
 ```
