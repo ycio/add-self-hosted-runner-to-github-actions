@@ -1,6 +1,10 @@
 # Add self-hosted Runner to Github Actions on Ubuntu
 
-## Provision a cloud server
+## Provision a cloud server (ubuntu)
+
+Provision a ubuntu server. 
+
+The next steps will be running on the ubuntu server.
 
 ## Install docker
 
