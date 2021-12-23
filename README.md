@@ -18,6 +18,12 @@ curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-gith
 https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-docker.sh | bash
 ```
 
+Add a cron job to clean up docker with `crontab e`.e.g:
+
+```
+0 * * * * docker system prune -f
+```
+
 ## Add user `ci` to run the runner
 
 ```
