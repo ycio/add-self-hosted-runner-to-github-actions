@@ -6,7 +6,7 @@ Provision a ubuntu server.
 
 The next steps will be running on the ubuntu server.
 
-## Install neccessary packages
+## Install essential packages
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-packages.sh | bash
