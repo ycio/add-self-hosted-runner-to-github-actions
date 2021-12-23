@@ -4,4 +4,4 @@ set -euo pipefail
 
 apt-get update
 
-apt -y install build-essential
+apt-get -y install build-essential
