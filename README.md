@@ -15,7 +15,7 @@ curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-gith
 ## Install docker
 
 ```bash
-https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-docker.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-docker.sh | bash
 ```
 
 Add a cron job to clean up docker with `crontab -e`.e.g:
