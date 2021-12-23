@@ -6,10 +6,16 @@ Provision a ubuntu server.
 
 The next steps will be running on the ubuntu server.
 
+## Install neccessary packages
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-packages.sh | bash
+```
+
 ## Install docker
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ycio/docker-installer/main/ubuntu.sh | bash
+https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-github-actions/main/install-docker.sh | bash
 ```
 
 ## Add user `ci` to run the runner
@@ -32,8 +38,8 @@ cd
 ```
 
 
-Following [the document](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners) to add the self-hosted runner 
+Follow [the document](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners) to add the self-hosted runner.
 
 ## Configuring the self-hosted runner application as a service
 
-https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service
+Follow the [instructions](https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service) to run the runner as a service.
