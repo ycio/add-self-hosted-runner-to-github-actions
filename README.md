@@ -28,7 +28,6 @@ echo "0 0 * * * docker system prune -f" | crontab -
 
 ```
 adduser --disabled-password --gecos "" ci
-# ...
 usermod -aG sudo ci
 usermod -aG docker ci
 newgrp docker
