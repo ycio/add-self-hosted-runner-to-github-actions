@@ -21,13 +21,13 @@ curl -fsSL https://raw.githubusercontent.com/ycio/add-self-hosted-runner-to-gith
 Add a cron job to clean up docker with `crontab -e`.e.g:
 
 ```
-0 0 * * * docker system prune -f
+echo "0 0 * * * docker system prune -f" | crontab -
 ```
 
 ## Add user `ci` to run the runner
 
 ```
-adduser ci
+adduser --disabled-password --gecos "" ci
 # ...
 usermod -aG sudo ci
 usermod -aG docker ci
