@@ -31,7 +31,7 @@ adduser --disabled-password --gecos "" ci
 usermod -aG sudo ci
 usermod -aG docker ci
 newgrp docker
-echo 'ci ALL=(ALL:ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
+echo 'ci ALL=(ALL:ALL) NOPASSWD: ALL' >>  /etc/sudoers.d/ci
 ```
 
 ## Adding self-hosted runners
