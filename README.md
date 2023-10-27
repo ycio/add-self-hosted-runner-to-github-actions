@@ -31,6 +31,7 @@ adduser --disabled-password --gecos "" ci
 usermod -aG sudo ci
 usermod -aG docker ci
 newgrp docker
+mkdir -p /etc/sudoers.d/ci
 echo 'ci ALL=(ALL:ALL) NOPASSWD: ALL' >>  /etc/sudoers.d/ci
 ```
 
